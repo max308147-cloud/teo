@@ -1,0 +1,116 @@
+/* GENERAL */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+}
+
+/* HEADER */
+header {
+    background-color: #c62828;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 40px;
+}
+
+/* NAVEGACIÓN */
+nav {
+    background-color: #1b1b1b;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #c62828;
+}
+
+/* SECCIONES */
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+h2 {
+    color: #ff5252;
+}
+
+/* TARJETAS DE ESTADÍSTICAS */
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+}
+
+/* TABLA DE RENDIMIENTO */
+table {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+    background-color: #1e1e1e;
+}
+
+table, th, td {
+    border: 1px solid #c62828;
+}
+
+th, td {
+    padding: 10px;
+}
+
+/* FORMULARIO */
+form {
+    background-color: #222;
+    padding: 20px;
+    width: 300px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+input, button {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #c62828;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #ff5252;
+    transform: scale(1.05);
+}
+
+/* FOOTER */
+footer {
+    background-color: #000;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}

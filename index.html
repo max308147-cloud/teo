@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Round - Monitoreo de Boxeo</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #111;
+            color: white;
+        }
+
+        header {
+            background-color: #c62828;
+            text-align: center;
+            padding: 30px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 40px;
+        }
+
+        nav {
+            background-color: #1b1b1b;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #c62828;
+        }
+
+        section {
+            padding: 40px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #ff5252;
+        }
+
+        /* Imagen principal */
+        .hero-img img {
+            width: 90%;
+            max-width: 300px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.6);
+        }
+
+        /* GALERÍA */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            width: 85%;
+            margin: auto;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 12px;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            cursor: pointer;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.7);
+        }
+
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: #222;
+            padding: 20px;
+            border-radius: 10px;
+            width: 200px;
+        }
+
+        table {
+            width: 80%;
+            margin: auto;
+            border-collapse: collapse;
+            background-color: #1e1e1e;
+        }
+
+        table, th, td {
+            border: 1px solid #c62828;
+        }
+
+        th, td {
+            padding: 10px;
+        }
+
+        form {
+            background-color: #222;
+            padding: 20px;
+            width: 300px;
+            margin: auto;
+            border-radius: 10px;
+        }
+
+        input, button {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #c62828;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ff5252;
+            transform: scale(1.05);
+        }
+
+        /* CONTACTO */
+        .contact-card {
+            background-color: #222;
+            padding: 30px;
+            width: 350px;
+            margin: auto;
+            border-radius: 12px;
+        }
+
+        .contact-card p {
+            margin: 10px 0;
+        }
+
+        .contact-buttons a {
+            text-decoration: none;
+        }
+
+        .whatsapp {
+            background-color: #25D366;
+            margin-top: 10px;
+        }
+
+        .whatsapp:hover {
+            background-color: #1ebe5d;
+        }
+
+        footer {
+            background-color: #000;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+    </style>
+
+</head>
+<body>
+
+<header>
+    <h1>🥊 Second Round</h1>
+    <p>Monitoreo de Actividad Física y Rendimiento en Boxeo</p>
+</header>
+
+<nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#estadisticas">Estadísticas</a>
+    <a href="#rendimiento">Rendimiento</a>
+    <a href="#galeria">Galería</a>
+    <a href="#registro">Registrar Entrenamiento</a>
+    <a href="#contacto">Contacto</a>
+</nav>
+
+<section id="inicio">
+    <h2>Bienvenido</h2>
+    <p>Second Round te permite monitorear tu actividad física, controlar tu progreso y mejorar tu rendimiento en el boxeo.</p>
+
+    <div class="hero-img">
+        <img src="https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?auto=format&fit=crop&w=1200&q=80" 
+             alt="Entrenamiento profesional de boxeo">
+    </div>
+</section>
+
+<section id="galeria">
+    <h2>Galería de Entrenamiento</h2>
+    <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1517433670267-08bbd4be890f?auto=format&fit=crop&w=800&q=80" alt="Boxeo 1">
+        <img src="https://images.unsplash.com/photo-1599058917765-a780eda07a3e?auto=format&fit=crop&w=800&q=80" alt="Boxeo 2">
+        <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=800&q=80" alt="Boxeo 3">
+    </div>
+</section>
+
+<section id="estadisticas">
+    <h2>Estadísticas Generales</h2>
+    <div class="stats">
+        <div class="card"><h3>🔥 Calorías</h3><p>850 kcal</p></div>
+        <div class="card"><h3>⏱ Tiempo</h3><p>1h 30min</p></div>
+        <div class="card"><h3>🥊 Golpes</h3><p>1,240</p></div>
+    </div>
+</section>
+
+<section id="rendimiento">
+    <h2>Historial de Entrenamientos</h2>
+    <table>
+        <tr>
+            <th>Fecha</th>
+            <th>Rondas</th>
+            <th>Duración</th>
+            <th>Calorías</th>
+        </tr>
+        <tr>
+            <td>01/03/2026</td>
+            <td>8</td>
+            <td>1h</td>
+            <td>700</td>
+        </tr>
+        <tr>
+            <td>03/03/2026</td>
+            <td>10</td>
+            <td>1h 30min</td>
+            <td>850</td>
+        </tr>
+    </table>
+</section>
+
+<section id="registro">
+    <h2>Registrar Nuevo Entrenamiento</h2>
+    <form>
+        <input type="date" required>
+        <input type="number" placeholder="Número de Rondas" required>
+        <input type="number" placeholder="Duración (minutos)" required>
+        <input type="number" placeholder="Calorías quemadas" required>
+        <button type="submit">Guardar Entrenamiento</button>
+    </form>
+</section>
+
+<section id="contacto">
+    <h2>Contacto</h2>
+
+    <div class="contact-card">
+        <p><strong>👤 Nombre:</strong> Mateo Cardenas Blandon</p>
+        <p><strong>📧 Email:</strong> max308147@gmail.com</p>
+        <p><strong>📱 Teléfono:</strong> +57 3146769330</p>
+        <p><strong>📍 Ubicación:</strong> Pereira, Colombia</p>
+
+        <div class="contact-buttons">
+            <a href="mailto:max308147@gmail.com">
+                <button>Enviar Correo</button>
+            </a>
+
+            <a href="https://wa.me/573146769330" target="_blank">
+                <button class="whatsapp">Contactar por WhatsApp</button>
+            </a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Second Round - Todos los derechos reservados</p>
+</footer>
+
+</body>
+</html>
